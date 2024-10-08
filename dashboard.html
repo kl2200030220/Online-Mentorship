@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F8F8F8;
+            color: #4A3B31;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: #D6C2B5;
+        }
+        header a {
+            margin: 0 15px;
+            color: #4A3B31;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #D6B395;
+            padding: 20px;
+            float: left;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            color: #4A3B31;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: #F3EDE6;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: calc(50% - 10px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="home.html">HOME</a>
+    <a href="dashboard.html">DASHBOARD</a>
+    <a href="about.html">ABOUT</a>
+    <a href="view_profile.html">PROFILE</a>
+</header>
+
+<div class="sidebar">
+    <h2>STUDENT</h2>
+    <a href="view_profile.html">VIEW PROFILE</a>
+    <a href="settings.html">SETTINGS</a>
+    <a href="account.html">ACCOUNT</a>
+    <a href="signout.html">SIGNOUT</a>
+</div>
+
+<div class="content">
+    <h2>DASHBOARD</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="2.jpg" width="100" height="100"alt="Courses">
+            <h3>COURSES</h3>
+        </div>
+        <div class="card">
+            <img src="3.jpg.jpg"width="100" height="100" alt="Progress">
+            <h3>PROGRESS</h3>
+        </div>
+        <div class="card">
+            <img src="4.jpg (2).png" width="100" height="100" alt="Badges">
+            <h3>BADGES</h3>
+        </div>
+        <div class="card">
+            <img src="5.jpg.png"width="100" height="100" alt="Feedback">
+            <h3>FEEDBACK</h3>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

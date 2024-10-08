@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F8F8F8;
+            color: #4A3B31;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: #D6C2B5;
+        }
+        header a {
+            margin: 0 15px;
+            color: #4A3B31;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .settings-box {
+            background-color: #D6B395;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .settings-box h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: center;
+        }
+        .settings-box label {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .settings-box input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .settings-box button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #4A3B31;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .settings-box button:hover {
+            background-color: #3b322a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="home.html">HOME</a>
+    <a href="dashboard.html">DASHBOARD</a>
+    <a href="#">ABOUT</a>
+</header>
+
+<div class="content">
+    <div class="settings-box">
+        <h2>Account Settings</h2>
+        <label for="email">Change Email</label>
+        <input type="email" id="email" placeholder="Enter new email">
+        
+        <label for="password">Change Password</label>
+        <input type="password" id="password" placeholder="Enter new password">
+        
+        <button type="submit">Save Changes</button>
+    </div>
+</div>
+
+</body>
+</html>

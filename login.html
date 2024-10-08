@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F8F8F8;
+            color: #4A3B31;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: #D6C2B5;
+        }
+        header a {
+            margin: 0 15px;
+            color: #4A3B31;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .login-box {
+            background-color: #D6B395;
+            padding: 40px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .login-box h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .input-field {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 25px;
+            border: none;
+            background-color: #F3EDE6;
+        }
+        .login-button {
+            background-color: #4A3B31;
+            color: white;
+            padding: 10px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .login-button:hover {
+            background-color: #3b322a;
+        }
+        .new-user {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .new-user a {
+            color: #4A3B31;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .new-user a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="dashboard.html">DASHBOARD</a>
+    <a href="home.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+</header>
+
+<div class="login-container">
+    <div class="login-box">
+        <h2>LOGIN</h2>
+        <form action="#" method="post">
+            <input type="email" class="input-field" placeholder="EMAIL" required>
+            <input type="password" class="input-field" placeholder="PASSWORD" required>
+            <button type="submit" class="login-button">LOGIN</button>
+        </form>
+        <div class="new-user">
+            <p>NEW USER?? <a href="signup.html">SIGN UP</a></p> <!-- Updated to link to signup page -->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
